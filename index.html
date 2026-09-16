@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MKK — Authorized Agent of Respect Services | Morocco &amp; the Arab Maghreb</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<!-- TODO: replace https://www.example.com with the real production domain before launch,
+     and update robots.txt / sitemap.xml / the canonical + og:url below to match. -->
+<meta name="description" content="MKK is the exclusive authorized agent of Respect Services in Morocco, bringing 20+ years of Citizenship &amp; Residency by Investment expertise to Moroccan families, in Arabic and French.">
+<link rel="canonical" href="https://www.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MKK">
+<meta property="og:title" content="MKK — Authorized Agent of Respect Services">
+<meta property="og:description" content="Global Mobility, Guided Locally. MKK is the exclusive authorized agent of Respect Services in Morocco, bringing 20+ years of Citizenship &amp; Residency by Investment expertise to Moroccan families.">
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:image" content="https://www.example.com/assets/hero-skyline.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- No French or Arabic version of this page exists yet, so no hreflang alternates are
+     declared — a hreflang tag must point at real equivalent content, and inventing one
+     that resolves to nothing would be worse than omitting it. Add these once /fr/ and
+     /ar/ (or equivalent) pages exist:
+<link rel="alternate" hreflang="en" href="https://www.example.com/">
+<link rel="alternate" hreflang="fr" href="https://www.example.com/fr/">
+<link rel="alternate" hreflang="ar" href="https://www.example.com/ar/">
+<link rel="alternate" hreflang="x-default" href="https://www.example.com/">
+-->
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon-180.png">
+<link rel="icon" type="image/png" sizes="512x512" href="./assets/favicon-512.png">
+<meta name="theme-color" content="#2C1D16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MKK",
+  "alternateName": "MKK Consulting Services",
+  "description": "MKK is the exclusive authorized agent of Respect Services in Morocco, guiding families and investors across the Arab Maghreb through Citizenship & Residency by Investment programs.",
+  "areaServed": { "@type": "Country", "name": "Morocco" },
+  "knowsLanguage": ["ar", "fr"],
+  "logo": "https://www.example.com/assets/mkk-logo.png"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200..700&amp;family=Inter:wght@300..600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<script src="./image-slot.js"></script>
+<style>
+  html { scroll-behavior: smooth; scroll-snap-type: y mandatory; }
+  body { margin: 0; background: #2C1D16; font-family: Inter, system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  [data-mkk-site] main > div > div > section, [data-mkk-site] main > div > section { scroll-snap-align: start; scroll-snap-stop: always; }
+  .leaflet-container { background: #2C1D16 !important; font-family: Inter, system-ui, sans-serif !important; }
+  a { color: #C9A24D; text-decoration: none; }
+  a:hover { color: #F1E9D8; }
+  ::selection { background: #A9822F; color: #2C1D16; }
+  input, textarea, select, button { font-family: inherit; }
+  [data-reveal] { will-change: opacity, transform; }
+</style>
+</helmet>
+
+<div data-mkk-site="1" style="position:relative;min-height:100vh;background:#2C1D16">
+
+  <div style="position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none">
+    <div data-stage-photo="0" style="position:absolute;inset:-4%;opacity:1;transition:opacity 1.4s cubic-bezier(.22,.61,.36,1);background-color:#2C1D16;background-image:radial-gradient(120% 70% at 50% 12%, rgba(201,162,77,.16), transparent 62%), url('./assets/zellige.png');background-size:auto, cover;background-repeat:no-repeat, no-repeat;background-position:center top, center center">
+      <div style="position:absolute;inset:0;pointer-events:none;opacity:1">
+        <img src="./assets/hero-skyline.png" style="width:100%;height:100%;object-fit:cover;display:block">
+        <div style="position:absolute;inset:0;background:linear-gradient(90deg, #2C1D16 0%, #2C1D16 34%, rgba(44,29,22,.85) 46%, rgba(44,29,22,.35) 58%, transparent 70%)"></div>
+      </div>
+    </div>
+    <div data-stage-photo="1" style="position:absolute;inset:-4%;opacity:0;transition:opacity 1.4s cubic-bezier(.22,.61,.36,1);background-color:#2C1D16;background-image:url('./assets/zellige-stage2.png');background-size:cover;background-position:center center;background-repeat:no-repeat">
+      <div style="position:absolute;inset:0;pointer-events:none">
+        <image-slot id="mkk-home-bd-2" shape="rect" fit="cover" src="./assets/trust-flags.png" placeholder="STAGE 02 · calm advisory room, long cedar table, amber light"></image-slot>
+      </div>
+    </div>
+    <div data-stage-photo="2" style="position:absolute;inset:-4%;opacity:0;transition:opacity 1.4s cubic-bezier(.22,.61,.36,1)">
+      <div style="position:absolute;inset:0;pointer-events:none">
+        <image-slot id="mkk-home-bd-3" shape="rect" fit="cover" src="./assets/future-terrace.png" placeholder="STAGE 03 · family on a terrace at golden hour, city horizon"></image-slot>
+      </div>
+    </div>
+    <div data-stage-photo="3" style="position:absolute;inset:-4%;opacity:0;transition:opacity 1.4s cubic-bezier(.22,.61,.36,1);background-color:#2C1D16;overflow:hidden">
+      <video autoPlay="{{ true }}" loop="{{ true }}" muted="{{ true }}" playsInline="{{ true }}" src="./assets/stage3-earth-v2.mp4" style="width:100%;height:100%;object-fit:cover;display:block"></video>
+    </div>
+    <div data-stage-photo="4" style="position:absolute;inset:-4%;opacity:0;transition:opacity 1.4s cubic-bezier(.22,.61,.36,1);background-color:#2C1D16;background-image:url('./assets/stage4-riad.png');background-size:cover;background-position:center center;background-repeat:no-repeat"></div>
+    <div data-stage-photo="5" style="position:absolute;inset:-4%;opacity:0;transition:opacity 1.4s cubic-bezier(.22,.61,.36,1);background-color:#2C1D16;background-image:url('./assets/findus-bg-v2.png');background-size:cover;background-position:60% center;background-repeat:no-repeat"></div>
+    <div data-stage-photo="6" style="position:absolute;inset:-4%;opacity:0;transition:opacity 1.4s cubic-bezier(.22,.61,.36,1);background-color:#2C1D16;background-image:url('./assets/programs-bg.png');background-size:cover;background-position:center center;background-repeat:no-repeat"></div>
+    <div data-stage-photo="7" style="position:absolute;inset:-4%;opacity:0;transition:opacity 1.4s cubic-bezier(.22,.61,.36,1);background-color:#2C1D16;background-image:url('./assets/contact-bg.png');background-size:cover;background-position:center center;background-repeat:no-repeat"></div>
+    <div data-stage-photo="8" style="position:absolute;inset:-4%;opacity:0;transition:opacity 1.4s cubic-bezier(.22,.61,.36,1);background-color:#2C1D16;background-image:url('./assets/how-bg.png');background-size:contain;background-position:center center;background-repeat:no-repeat"></div>
+    <div data-stage-bloom="1" style="position:absolute;inset:0;background:radial-gradient(52% 42% at 52% 30%, rgba(201,162,77,.24), transparent 70%)"></div>
+    <div data-stage-veil="1" style="position:absolute;inset:0;background:{{ veil }}"></div>
+    <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 40%, transparent 42%, rgba(8,18,13,.42) 100%)"></div>
+  </div>
+
+  <div style="position:fixed;left:26px;top:18vh;bottom:18vh;width:14px;z-index:3;pointer-events:none;display:flex;flex-direction:column;justify-content:space-between;align-items:center">
+    <div style="position:absolute;left:6px;top:0;bottom:0;width:1px;background:rgba(201,162,77,.3)"></div>
+    <div data-spine="0" style="width:7px;height:7px;background:rgba(201,162,77,.4);transform:rotate(45deg);transition:all .5s cubic-bezier(.22,.61,.36,1)"></div>
+    <div data-spine="1" style="width:7px;height:7px;background:rgba(201,162,77,.4);transform:rotate(45deg);transition:all .5s cubic-bezier(.22,.61,.36,1)"></div>
+    <div data-spine="2" style="width:7px;height:7px;background:rgba(201,162,77,.4);transform:rotate(45deg);transition:all .5s cubic-bezier(.22,.61,.36,1)"></div>
+    <div data-spine="3" style="width:7px;height:7px;background:rgba(201,162,77,.4);transform:rotate(45deg);transition:all .5s cubic-bezier(.22,.61,.36,1)"></div>
+    <div data-spine="4" style="width:7px;height:7px;background:rgba(201,162,77,.4);transform:rotate(45deg);transition:all .5s cubic-bezier(.22,.61,.36,1)"></div>
+    <div data-spine="5" style="width:7px;height:7px;background:rgba(201,162,77,.4);transform:rotate(45deg);transition:all .5s cubic-bezier(.22,.61,.36,1)"></div>
+  </div>
+
+  <header style="position:fixed;left:0;right:0;top:0;z-index:6;background:linear-gradient(180deg, rgba(44,29,22,.64), rgba(44,29,22,.32) 70%, transparent);border-bottom:1px solid rgba(241,233,216,.12);backdrop-filter:blur(3px)">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:24px;padding:20px clamp(20px,4vw,64px) 20px clamp(58px,5vw,72px)">
+      <a href="#" onClick="{{ goHome }}" style="display:flex;align-items:center;gap:12px;flex:0 0 auto;margin-right:auto">
+        <img src="./assets/mkk-logo.png" alt="MKK" style="height:clamp(42px,4vw,58px);width:auto;display:block">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:rgba(241,233,216,.55);line-height:1.5;max-width:120px">Authorized Agent<br>Respect Services</span>
+      </a>
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <nav style="display:flex;align-items:center;gap:clamp(14px,1.7vw,28px);font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase">
+          <a href="#" onClick="{{ goHome }}" style="color:{{ navHome }};padding-bottom:3px;border-bottom:1px solid {{ navHomeRule }}">Home</a>
+          <a href="#" onClick="{{ goAbout }}" style="color:rgba(241,233,216,.72)">About Us</a>
+          <a href="#" onClick="{{ goPrograms }}" style="color:{{ navPrograms }};padding-bottom:3px;border-bottom:1px solid {{ navProgramsRule }}">Our Programs</a>
+          <a href="#" onClick="{{ goWhy }}" style="color:rgba(241,233,216,.72)">Why MKK</a>
+          <a href="#" onClick="{{ goHow }}" style="color:{{ navHow }};padding-bottom:3px;border-bottom:1px solid {{ navHowRule }}">How It Works</a>
+          <a href="#" onClick="{{ goFaq }}" style="color:rgba(241,233,216,.72)">FAQ</a>
+          <a href="#" onClick="{{ goTestimonials }}" style="color:{{ navTestimonials }};padding-bottom:3px;border-bottom:1px solid {{ navTestimonialsRule }}">Success Stories</a>
+          <a href="#" onClick="{{ goContact }}" style="color:{{ navContact }};padding-bottom:3px;border-bottom:1px solid {{ navContactRule }}">Contact</a>
+          <a href="#" onClick="{{ goContact }}" style="color:#2C1D16;background:#C9A24D;padding:11px 18px;border-radius:2px;letter-spacing:.16em">WhatsApp</a>
+        </nav>
+      </sc-if>
+      <sc-if value="{{ narrow }}" hint-placeholder-val="{{ false }}">
+        <button type="button" onClick="{{ toggleMenu }}" style="background:none;border:1px solid rgba(241,233,216,.4);border-radius:2px;width:46px;height:46px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer">
+          <span style="display:block;width:20px;height:1px;background:#F1E9D8"></span>
+          <span style="display:block;width:20px;height:1px;background:#F1E9D8"></span>
+        </button>
+      </sc-if>
+    </div>
+    <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="background:rgba(44,29,22,.97);border-top:1px solid rgba(241,233,216,.14);padding:18px clamp(20px,5vw,40px) 30px;display:flex;flex-direction:column;gap:0;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase">
+        <a href="#" onClick="{{ goHome }}" style="color:#F1E9D8;padding:16px 0;border-bottom:1px solid rgba(241,233,216,.14)">Home</a>
+        <a href="#" onClick="{{ goAbout }}" style="color:#F1E9D8;padding:16px 0;border-bottom:1px solid rgba(241,233,216,.14)">About Us</a>
+        <a href="#" onClick="{{ goPrograms }}" style="color:#F1E9D8;padding:16px 0;border-bottom:1px solid rgba(241,233,216,.14)">Our Programs</a>
+        <a href="#" onClick="{{ goWhy }}" style="color:#F1E9D8;padding:16px 0;border-bottom:1px solid rgba(241,233,216,.14)">Why MKK</a>
+        <a href="#" onClick="{{ goHow }}" style="color:#F1E9D8;padding:16px 0;border-bottom:1px solid rgba(241,233,216,.14)">How It Works</a>
+        <a href="#" onClick="{{ goFaq }}" style="color:#F1E9D8;padding:16px 0;border-bottom:1px solid rgba(241,233,216,.14)">FAQ</a>
+        <a href="#" onClick="{{ goTestimonials }}" style="color:#F1E9D8;padding:16px 0;border-bottom:1px solid rgba(241,233,216,.14)">Success Stories</a>
+        <a href="#" onClick="{{ goContact }}" style="color:#F1E9D8;padding:16px 0">Contact</a>
+        <a href="#" onClick="{{ goContact }}" style="margin-top:18px;text-align:center;color:#2C1D16;background:#C9A24D;padding:16px 18px;border-radius:2px">Message Us on WhatsApp</a>
+      </div>
+    </sc-if>
+  </header>
+
+  <main style="position:relative;z-index:2;padding:0 clamp(24px,6vw,110px) 0 clamp(58px,7vw,124px)">
+
+    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+      <div>
+        
+
+        <section data-reveal="1" data-chapter="0" style="min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:130px 0 40px;max-width:640px">
+          <div style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">
+            <span style="width:24px;height:1px;background:rgba(201,162,77,.6)"></span><span>Global Opportunities<br>Rooted in Morocco</span>
+          </div>
+          <h1 style="font-family: 'Roboto Slab',serif; font-weight: 300; font-size: clamp(34px,5.4vw,68px); line-height: 1.06; letter-spacing: -0.025em; margin: 26px 0 0; text-shadow: 0 2px 40px rgba(8,18,13,.85); text-wrap: pretty"><span style="color:#F1E9D8">Global Mobility,</span><br><span style="color:#C9A24D">Guided Locally.</span></h1>
+          <p style="font-size: clamp(15px,1.3vw,18px); line-height: 1.65; font-weight: 300; color: rgba(241,233,216,.9); max-width: 520px; margin: 28px 0 0; text-shadow: 0 1px 22px rgba(8,18,13,.9)">MKK is the exclusive authorized agent of Respect Services in Morocco — bringing 20+ years of Citizenship &amp; Residency by Investment expertise to Moroccan families, in Arabic and French.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:38px">
+            <a href="#" onClick="{{ goContact }}" style="background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:19px 32px;border-radius:2px">Book a Free Consultation</a>
+            <a href="#" onClick="{{ goPrograms }}" style="border:1px solid rgba(241,233,216,.45);color:#F1E9D8;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:18px 32px;border-radius:2px">Explore Our Programs</a>
+          </div>
+          <div style="margin-top:64px;border-top:1px solid rgba(241,233,216,.18);padding-top:22px;display:flex;flex-wrap:wrap;gap:24px 40px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(241,233,216,.86)">
+            <span style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.4"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><line x1="3" y1="12" x2="21" y2="12"></line></svg>Multiple Citizenship &amp; Residency Programs</span>
+            <span style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.4"><circle cx="9" cy="8" r="3"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path><circle cx="17" cy="9" r="2.4"></circle><path d="M15.5 14a4.7 4.7 0 0 1 5.5 4.6"></path></svg>20+ Years of Expertise</span>
+            <span style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.4"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"></path><path d="M8.5 12l2.3 2.3L15.5 9.5"></path></svg>Thousands of Success Stories</span>
+            <span style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.4"><path d="M12 2l3 5.5L21 9l-4 4 1 6-6-3-6 3 1-6-4-4 6-1.5z"></path></svg>Trust · Discretion · Global Access</span>
+          </div>
+        </section><section data-reveal="1" data-chapter="1" style="position:relative;height:100vh;box-sizing:border-box;overflow-y:auto;display:flex;flex-direction:column;justify-content:flex-start;padding:130px 0 26px;margin:0 clamp(-24px,-6vw,-110px) 0 clamp(-58px,-7vw,-124px)">
+          <div style="position:absolute;inset:0;z-index:0">
+            <image-slot id="mkk-possibilities-bg" shape="rect" fit="cover" src="./assets/possibilities-bg.png" placeholder="Riad arches at golden hour, city skyline through the columns" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(44,29,22,.44) 0%, rgba(44,29,22,.44) 30%, rgba(44,29,22,.76) 100%)"></div>
+          </div>
+          <div style="position:relative;z-index:1;padding:0 clamp(24px,6vw,110px) 0 clamp(58px,7vw,124px)">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap">
+            <div style="max-width:640px">
+              <div style="display:flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">
+                <span>02</span><span style="width:52px;height:1px;background:rgba(201,162,77,.6)"></span><span>The Possibilities</span>
+              </div>
+              <h2 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(26px,3.4vw,46px);line-height:1.08;letter-spacing:-0.02em;color:#F1E9D8;margin:14px 0 16px;text-shadow:0 2px 30px rgba(8,18,13,.85)">Four routes, one trusted process.</h2>
+              <p style="font-size:clamp(14px,1.1vw,16px);line-height:1.65;font-weight:300;color:rgba(241,233,216,.88);margin:0;max-width:560px">Different goals. The same commitment — guiding you with expertise, discretion and a truly personalized approach.</p>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(241,233,216,.75);padding-left:20px;border-left:1px solid rgba(241,233,216,.3);line-height:1.8">Global Opportunities<br>Rooted in Morocco</div>
+          </div>
+          <div style="margin-top:32px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px">
+            <a href="#" onClick="{{ goPrograms }}" style="display:flex;flex-direction:column;background:#F1E9D8;border-radius:2px;overflow:hidden;text-decoration:none;min-height:0">
+              <div style="aspect-ratio:16/10;flex:0 0 auto"><image-slot id="mkk-poss-card-1" shape="rect" fit="cover" src="./assets/poss-card-1.png" placeholder="Passport &amp; world map, marble surface"></image-slot></div>
+              <div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1">
+                <div style="display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;color:#A9822F"><span>P/01</span><span style="width:18px;height:1px;background:#A9822F"></span></div>
+                <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(17px,1.5vw,21px);line-height:1.22;color:#2C1D16;margin:2px 0 4px">Citizenship by Investment</h3>
+                <p style="font-size:12.5px;line-height:1.55;font-weight:300;color:#4a3a2e;margin:0;flex:1">Access a second citizenship through secure and internationally recognized investment programs.</p>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#A9822F;margin-top:6px">Learn More →</span>
+              </div>
+            </a>
+            <a href="#" onClick="{{ goPrograms }}" style="display:flex;flex-direction:column;background:#F1E9D8;border-radius:2px;overflow:hidden;text-decoration:none;min-height:0">
+              <div style="aspect-ratio:16/10;flex:0 0 auto"><image-slot id="mkk-poss-card-2" shape="rect" fit="cover" src="./assets/poss-card-2.png" placeholder="City skyline view from a lounge terrace at dusk"></image-slot></div>
+              <div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1">
+                <div style="display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;color:#A9822F"><span>P/02</span><span style="width:18px;height:1px;background:#A9822F"></span></div>
+                <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(17px,1.5vw,21px);line-height:1.22;color:#2C1D16;margin:2px 0 4px">Residency by Investment</h3>
+                <p style="font-size:12.5px;line-height:1.55;font-weight:300;color:#4a3a2e;margin:0;flex:1">Obtain a residency permit for you and your family with long-term opportunities.</p>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#A9822F;margin-top:6px">Learn More →</span>
+              </div>
+            </a>
+            <a href="#" onClick="{{ goPrograms }}" style="display:flex;flex-direction:column;background:#F1E9D8;border-radius:2px;overflow:hidden;text-decoration:none;min-height:0">
+              <div style="aspect-ratio:16/10;flex:0 0 auto"><image-slot id="mkk-poss-card-3" shape="rect" fit="cover" src="./assets/poss-card-3.png" placeholder="Globe, notebook &amp; leather briefcase on a desk"></image-slot></div>
+              <div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1">
+                <div style="display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;color:#A9822F"><span>P/03</span><span style="width:18px;height:1px;background:#A9822F"></span></div>
+                <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(17px,1.5vw,21px);line-height:1.22;color:#2C1D16;margin:2px 0 4px">Business Migration Consultancy</h3>
+                <p style="font-size:12.5px;line-height:1.55;font-weight:300;color:#4a3a2e;margin:0;flex:1">Set up, invest and expand globally with tailored advisory and end-to-end support.</p>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#A9822F;margin-top:6px">Learn More →</span>
+              </div>
+            </a>
+            <a href="#" onClick="{{ goPrograms }}" style="display:flex;flex-direction:column;background:#F1E9D8;border-radius:2px;overflow:hidden;text-decoration:none;min-height:0">
+              <div style="aspect-ratio:16/10;flex:0 0 auto"><image-slot id="mkk-poss-card-4" shape="rect" fit="cover" src="./assets/poss-card-4.png" placeholder="Modern villa pool overlooking the city"></image-slot></div>
+              <div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1">
+                <div style="display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;color:#A9822F"><span>P/04</span><span style="width:18px;height:1px;background:#A9822F"></span></div>
+                <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(17px,1.5vw,21px);line-height:1.22;color:#2C1D16;margin:2px 0 4px">International Real Estate &amp; Property Management</h3>
+                <p style="font-size:12.5px;line-height:1.55;font-weight:300;color:#4a3a2e;margin:0;flex:1">Invest in prime real estate with professional guidance and complete management services.</p>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#A9822F;margin-top:6px">Learn More →</span>
+              </div>
+            </a>
+          </div>
+          <div style="margin-top:22px;padding-top:18px;border-top:1px solid rgba(201,162,77,.4);text-align:center;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:#C9A24D">People · Opportunity · A Brighter Tomorrow</div>
+          </div>
+        </section>
+
+        <section id="why-mkk" data-reveal="1" data-chapter="2" style="height:100vh;box-sizing:border-box;overflow-y:auto;display:flex;flex-direction:column;justify-content:flex-start;padding:130px 0 20px">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap">
+            <div style="max-width:640px">
+              <div style="display:flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">
+                <span>03</span><span style="width:52px;height:1px;background:rgba(201,162,77,.6)"></span><span>The Trust</span>
+              </div>
+              <h2 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(32px,5vw,68px);line-height:1.06;letter-spacing:-0.025em;margin:22px 0 0;text-shadow:0 2px 34px rgba(8,18,13,.85)"><span style="color:#F1E9D8">Global Expertise.</span><br><span style="color:#C9A24D">Local Trust.</span></h2>
+              <p style="font-size:clamp(15px,1.2vw,17px);line-height:1.55;font-weight:400;color:#F1E9D8;margin:22px 0 6px">Backed by Respect Services. Delivered by MKK.</p>
+              <p style="font-size:13.5px;line-height:1.65;font-weight:300;color:rgba(241,233,216,.82);margin:0;max-width:480px">International credibility, with a deep local presence in Morocco. A secure, transparent and personalized experience.</p>
+            </div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#C9A24D;padding-left:20px;border-left:1px solid rgba(201,162,77,.4);line-height:1.9">People<br>Opportunity<br>Trust<br>A Brighter<br>Tomorrow</div>
+          </div>
+          <div style="position:relative;margin-top:48px;max-width:1000px;padding-bottom:28px">
+            <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px">
+              <div style="position:relative;border:1px solid rgba(201,162,77,.75);border-radius:8px;background:rgba(30,20,15,.62);padding:28px 16px 26px;text-align:center">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;color:#F1E9D8;margin-bottom:14px">01</div>
+                <div style="width:34px;height:34px;margin:0 auto 16px;border:1px solid rgba(201,162,77,.75);border-radius:50%;display:flex;align-items:center;justify-content:center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.6"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5z"></path><path d="M8.5 12l2.3 2.3L15.5 9.5"></path></svg></div>
+                <div style="width:22px;height:1px;background:rgba(201,162,77,.6);margin:0 auto 16px"></div>
+                <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:18px;line-height:1.28;color:#F1E9D8;margin:0 0 16px">Backed by<br>Respect Services</h3>
+                <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.05em;line-height:1.7;text-transform:uppercase;color:rgba(241,233,216,.75);margin:0">International credibility. Proven processes. Stronger outcomes.</p>
+                <div style="position:absolute;left:50%;bottom:-9px;transform:translateX(-50%);width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 32% 30%, #d8a750, #6b4a1f 75%)"></div>
+              </div>
+              <div style="position:relative;border:1px solid rgba(201,162,77,.75);border-radius:8px;background:rgba(30,20,15,.62);padding:28px 16px 26px;text-align:center">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;color:#F1E9D8;margin-bottom:14px">02</div>
+                <div style="width:34px;height:34px;margin:0 auto 16px;border:1px solid rgba(201,162,77,.75);border-radius:50%;display:flex;align-items:center;justify-content:center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.6"><path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.3"></circle></svg></div>
+                <div style="width:22px;height:1px;background:rgba(201,162,77,.6);margin:0 auto 16px"></div>
+                <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:18px;line-height:1.28;color:#F1E9D8;margin:0 0 16px">Local &amp; Personal<br>Support</h3>
+                <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.05em;line-height:1.7;text-transform:uppercase;color:rgba(241,233,216,.75);margin:0">A dedicated team in Morocco, by your side at every step.</p>
+                <div style="position:absolute;left:50%;bottom:-9px;transform:translateX(-50%);width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 32% 30%, #a3805a, #4a3a2c 75%)"></div>
+              </div>
+              <div style="position:relative;border:1px solid rgba(201,162,77,.75);border-radius:8px;background:rgba(30,20,15,.62);padding:28px 16px 26px;text-align:center">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;color:#F1E9D8;margin-bottom:14px">03</div>
+                <div style="width:34px;height:34px;margin:0 auto 16px;border:1px solid rgba(201,162,77,.75);border-radius:50%;display:flex;align-items:center;justify-content:center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.6"><path d="M6 2h9l3 3v17H6z"></path><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="13" y2="17"></line></svg></div>
+                <div style="width:22px;height:1px;background:rgba(201,162,77,.6);margin:0 auto 16px"></div>
+                <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:18px;line-height:1.28;color:#F1E9D8;margin:0 0 16px">Full<br>Transparency</h3>
+                <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.05em;line-height:1.7;text-transform:uppercase;color:rgba(241,233,216,.75);margin:0">Clear guidance, straightforward communication. No surprises.</p>
+                <div style="position:absolute;left:50%;bottom:-9px;transform:translateX(-50%);width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 32% 30%, #6b6560, #2b2825 75%)"></div>
+              </div>
+              <div style="position:relative;border:1px solid rgba(201,162,77,.75);border-radius:8px;background:rgba(30,20,15,.62);padding:28px 16px 26px;text-align:center">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;color:#F1E9D8;margin-bottom:14px">04</div>
+                <div style="width:34px;height:34px;margin:0 auto 16px;border:1px solid rgba(201,162,77,.75);border-radius:50%;display:flex;align-items:center;justify-content:center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.6"><circle cx="9" cy="8" r="3"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path><circle cx="17" cy="9" r="2.4"></circle><path d="M15.5 14a4.7 4.7 0 0 1 5.5 4.6"></path></svg></div>
+                <div style="width:22px;height:1px;background:rgba(201,162,77,.6);margin:0 auto 16px"></div>
+                <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:18px;line-height:1.28;color:#F1E9D8;margin:0 0 16px">One Trusted<br>Process</h3>
+                <p style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.05em;line-height:1.7;text-transform:uppercase;color:rgba(241,233,216,.75);margin:0">From consultation to completion, we make your journey simple, secure and efficient.</p>
+                <div style="position:absolute;left:50%;bottom:-9px;transform:translateX(-50%);width:16px;height:16px;border-radius:50%;background:radial-gradient(circle at 32% 30%, #e8e2d6, #a89c88 75%)"></div>
+              </div>
+            </div>
+            <div style="position:absolute;left:0;right:0;bottom:0;height:1px;background:rgba(201,162,77,.55)"></div>
+          </div>
+          <div style="margin-top:36px;display:flex;align-items:center;gap:18px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C9A24D">
+            <span>More Than Mobility</span><span style="width:60px;height:1px;background:rgba(201,162,77,.6)"></span><span style="color:rgba(241,233,216,.75)">A Partnership You Can Count On</span>
+          </div>
+        </section>
+
+        <section data-reveal="1" data-chapter="3" style="position:relative;height:100vh;box-sizing:border-box;overflow-y:auto;display:flex;flex-direction:column;justify-content:flex-start;padding:130px 0 26px;margin:0 clamp(-24px,-6vw,-110px) 0 clamp(-58px,-7vw,-124px)">
+          <div style="position:absolute;inset:0;z-index:0">
+            <div style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(44,29,22,.64) 0%, rgba(44,29,22,.52) 45%, rgba(44,29,22,.34) 70%, rgba(44,29,22,.14) 100%)"></div>
+          </div>
+          <div style="position:relative;z-index:1;padding:0 clamp(24px,6vw,110px) 0 clamp(58px,7vw,124px)">
+          
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; flex-wrap: wrap; width: 812px; height: 382px">
+            <div style="max-width:600px">
+              <div style="display:flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">
+                <span>04</span><span style="width:52px;height:1px;background:rgba(201,162,77,.6)"></span><span>The Journey</span>
+              </div>
+              <h2 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(28px,3.6vw,52px);line-height:1.12;letter-spacing:-0.02em;margin:20px 0 0;text-shadow:0 2px 30px rgba(8,18,13,.85)"><span style="color:#F1E9D8">Five steps,</span><br><span style="color:#F1E9D8">from first meeting</span><br><span style="color:#C9A24D">to delivery.</span></h2>
+              <p style="font-size:clamp(14px,1.1vw,16px);line-height:1.6;font-weight:300;color:rgba(241,233,216,.88);margin:22px 0 0;max-width:460px">A clear, structured and personalized journey, designed for your peace of mind.</p>
+              <a href="#" onClick="{{ goHow }}" style="display:inline-flex;align-items:center;gap:12px;margin-top:26px;border:1px solid rgba(241,233,216,.45);color:#F1E9D8;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:16px 28px;border-radius:2px">See How It Works →</a>
+            </div><div style="font-family: 'IBM Plex Mono',monospace; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: #C9A24D; padding-left: 20px; border-left: 1px solid rgba(201,162,77,.4); line-height: 1.9; text-align: left">People<br>Opportunity<br>Trust<br>A Brighter<br>Tomorrow</div>
+            
+          </div><div style="margin-top:36px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px">
+            <div style="width: 214px; height: 254px">
+              <div style="font-family:'Roboto Slab',serif;font-weight:300;font-size:28px;color:#C9A24D;margin-bottom:14px">01</div>
+              <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:16px;line-height:1.25;color:#F1E9D8;margin:0 0 10px">Consultation with MKK</h3>
+              <p style="font-size:12px;line-height:1.6;font-weight:300;color:rgba(241,233,216,.75);margin:0">We understand your goals, assess your profile and define the best strategy for your future.</p>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.5" style="margin-top: 14px; display: block; width: 126px; height: 40px"><circle cx="9" cy="8" r="3.2"></circle><path d="M3.5 19c0-3.2 2.5-5.8 5.8-5.8"></path><circle cx="16.5" cy="9" r="2.4"></circle><path d="M20.5 19c0-2.7-2-5-4.6-5.4"></path></svg>
+            </div>
+            <div>
+              <div style="font-family:'Roboto Slab',serif;font-weight:300;font-size:28px;color:#C9A24D;margin-bottom:14px">02</div>
+              <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:16px;line-height:1.25;color:#F1E9D8;margin:0 0 10px">Application Preparation</h3>
+              <p style="font-size:12px;line-height:1.6;font-weight:300;color:rgba(241,233,216,.75);margin:0">We guide you through every requirement and prepare a strong, complete application.</p>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.5" style="margin-top: 14px; display: block; width: 154px; height: 36px"><path d="M6 2h9l3 3v17H6z"></path><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="13" y2="17"></line></svg>
+            </div>
+            <div style="width: 214px; height: 275px">
+              <div style="font-family:'Roboto Slab',serif;font-weight:300;font-size:28px;color:#C9A24D;margin-bottom:14px">03</div>
+              <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:16px;line-height:1.25;color:#F1E9D8;margin:0 0 10px">Agreement with Respect Services</h3>
+              <p style="font-size:12px;line-height:1.6;font-weight:300;color:rgba(241,233,216,.75);margin:0">You benefit from our trusted local expertise and international network.</p>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.5" style="margin-top: 14px; display: block; width: 143px; height: 34px"><path d="M8 12l3 3 5-6"></path><circle cx="12" cy="12" r="9"></circle></svg>
+            </div>
+            <div>
+              <div style="font-family:'Roboto Slab',serif;font-weight:300;font-size:28px;color:#C9A24D;margin-bottom:14px">04</div>
+              <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:16px;line-height:1.25;color:#F1E9D8;margin:0 0 10px">Submission &amp; Processing</h3>
+              <p style="font-size:12px;line-height:1.6;font-weight:300;color:rgba(241,233,216,.75);margin:0">We manage the entire process with precision, keeping you informed at every step.</p>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.5" style="margin-top: 14px; display: block; width: 134px; height: 46px"><circle cx="12" cy="12" r="3"></circle><path d="M12 3v2.5M12 18.5V21M5 6l1.8 1.8M17.2 16.2L19 18M3 12h2.5M18.5 12H21M5 18l1.8-1.8M17.2 7.8L19 6"></path></svg>
+            </div>
+            <div>
+              <div style="font-family:'Roboto Slab',serif;font-weight:300;font-size:28px;color:#C9A24D;margin-bottom:14px">05</div>
+              <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:16px;line-height:1.25;color:#F1E9D8;margin:0 0 10px">Approval &amp; Delivery</h3>
+              <p style="font-size:12px;line-height:1.6;font-weight:300;color:rgba(241,233,216,.75);margin:0">You receive your approval and we continue to support you beyond, for a seamless transition.</p>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A24D" stroke-width="1.5" style="margin-top: 14px; display: block; width: 117px; height: 39px"><circle cx="12" cy="12" r="9"></circle><path d="M8 12l2.5 2.5L16 9"></path></svg>
+            </div>
+          </div>
+          <div style="margin-top:22px;padding-top:18px;border-top:1px solid rgba(201,162,77,.4);display:flex;align-items:center;gap:18px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C9A24D">
+            <span>More Than Mobility</span><span style="width:60px;height:1px;background:rgba(201,162,77,.6)"></span><span style="color:rgba(241,233,216,.75)">A Partnership You Can Count On</span>
+          </div>
+          </div>
+        </section>
+
+        <section id="about-us" data-reveal="1" data-chapter="4" style="min-height:88vh;display:flex;flex-direction:column;justify-content:center;max-width:1000px;padding:0">
+          <div>
+            <div style="display:flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">
+              <span>05</span><span style="width:52px;height:1px;background:rgba(201,162,77,.6)"></span><span>The Future</span>
+            </div>
+            <h2 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(28px,3.6vw,52px);line-height:1.1;letter-spacing:-0.02em;color:#F1E9D8;margin:26px 0 0;text-shadow:0 2px 30px rgba(8,18,13,.85)">A decision made once, for the generations after.</h2>
+            <div style="margin-top:26px">
+              <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+                <span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — editorial paragraph, approved by MKK</span>
+              </sc-if>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" data-reveal="arrive" data-chapter="5" style="height:100vh;box-sizing:border-box;overflow-y:auto;display:flex;flex-direction:column;justify-content:center;padding:24px 0;max-width:900px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">FAQ</div>
+          <h2 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(28px,3.4vw,48px);line-height:1.1;letter-spacing:-0.02em;color:#F1E9D8;margin:24px 0 40px;text-shadow:0 2px 28px rgba(8,18,13,.85)">Questions we are asked most.</h2>
+          <div style="border-top:1px solid rgba(241,233,216,.2)">
+            <div style="padding:26px 0;border-bottom:1px solid rgba(241,233,216,.2)">
+              <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(18px,1.8vw,24px);line-height:1.3;color:#F1E9D8;margin:0 0 14px">Is MKK the provider of these programs?</h3>
+              <p style="font-size:15px;line-height:1.75;font-weight:300;color:rgba(241,233,216,.85);margin:0">No. MKK is the exclusive authorized agent of Respect Services in Morocco. All programs, applications, and service agreements are provided directly by Respect Services.</p>
+            </div>
+            <div style="padding:26px 0;border-bottom:1px solid rgba(241,233,216,.2)">
+              <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(18px,1.8vw,24px);line-height:1.3;color:#F1E9D8;margin:0 0 14px">In which languages can I be advised?</h3>
+              <p style="font-size:15px;line-height:1.75;font-weight:300;color:rgba(241,233,216,.85);margin:0">Arabic and French, face to face, in Morocco.</p>
+            </div>
+            <div style="padding:26px 0;border-bottom:1px solid rgba(241,233,216,.2)">
+              <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(18px,1.8vw,24px);line-height:1.3;color:#F1E9D8;margin:0 0 14px">Can MKK guarantee an outcome?</h3>
+              <p style="font-size:15px;line-height:1.75;font-weight:300;color:rgba(241,233,216,.85);margin:0">No. MKK does not issue citizenship or residency, does not approve applications, and does not guarantee outcomes. Decisions rest with the authorities of each program.</p>
+            </div>
+            <div style="padding:26px 0;border-bottom:1px solid rgba(241,233,216,.2)">
+              <h3 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(18px,1.8vw,24px);line-height:1.3;color:#F1E9D8;margin:0 0 14px">What does the first consultation cost?</h3>
+              <p style="font-size:15px;line-height:1.75;font-weight:300;color:rgba(241,233,216,.85);margin:0 0 12px">The first consultation is free.</p>
+              <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+                <span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:5px 9px">TODO — further FAQ answers from MKK</span>
+              </sc-if>
+            </div>
+          </div>
+        </section>
+
+        <section data-reveal="1" data-chapter="6" style="height:100vh;box-sizing:border-box;overflow-y:auto;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px 0">
+          <div style="display:inline-flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">
+            <span>06</span><span style="width:52px;height:1px;background:rgba(201,162,77,.6)"></span><span>The Conversation</span>
+          </div>
+          <h2 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(32px,5.4vw,78px);line-height:1.04;letter-spacing:-0.025em;color:#F1E9D8;margin:30px 0 0;max-width:1000px;text-shadow:0 2px 36px rgba(8,18,13,.9)">Begin with a conversation, in Arabic or French.</h2>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:44px">
+            <a href="#" onClick="{{ goContact }}" style="background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:19px 32px;border-radius:2px">Book a Free Consultation</a>
+            <a href="#" onClick="{{ goContact }}" style="border:1px solid rgba(241,233,216,.45);color:#F1E9D8;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:18px 32px;border-radius:2px">Message Us on WhatsApp</a>
+          </div>
+          <div style="margin-top:24px">
+            <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+              <span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — WhatsApp number</span>
+            </sc-if>
+          </div>
+          <div style="margin-top:32px;width:100%;max-width:1000px;border:1px solid rgba(44,29,22,.15);border-radius:6px;padding:clamp(18px,2vw,28px) clamp(22px,3vw,40px);background:#F1E9D8;text-align:left;box-shadow:0 20px 60px rgba(8,18,13,.35)">
+            <div style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24D">
+              <svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,0 13.91,7.38 20.49,3.51 16.62,10.09 24,12 16.62,13.91 20.49,20.49 13.91,16.62 12,24 10.09,16.62 3.51,20.49 7.38,13.91 0,12 7.38,10.09 3.51,3.51 10.09,7.38" fill="#A9822F"></polygon></svg>
+              <span>Request a Consultation</span>
+            </div>
+            <div style="margin-top:16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 24px">
+              <label style="display:block">
+                <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:6px">Full name</span>
+                <input type="text" style="width:100%;box-sizing:border-box;background:transparent;border:0;border-bottom:1px solid rgba(44,29,22,.28);color:#2C1D16;font-size:14px;padding:6px 0;outline:none" style-focus="border-bottom-color:#C9A24D">
+              </label>
+              <label style="display:block">
+                <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:6px">Email</span>
+                <input type="email" style="width:100%;box-sizing:border-box;background:transparent;border:0;border-bottom:1px solid rgba(44,29,22,.28);color:#2C1D16;font-size:14px;padding:6px 0;outline:none" style-focus="border-bottom-color:#C9A24D">
+              </label>
+              <label style="display:block">
+                <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:6px">WhatsApp number</span>
+                <input type="tel" style="width:100%;box-sizing:border-box;background:transparent;border:0;border-bottom:1px solid rgba(44,29,22,.28);color:#2C1D16;font-size:14px;padding:6px 0;outline:none" style-focus="border-bottom-color:#C9A24D">
+              </label>
+            </div>
+            <div style="margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+              <div>
+                <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:8px">Programme of interest</span>
+                <div style="display:flex;flex-wrap:wrap;gap:8px">
+                  <button type="button" onClick="{{ pickProgram0 }}" style="border:1px solid {{ prog0 }};background:none;border-radius:2px;padding:8px 12px;font-size:11px;color:#2C1D16;cursor:pointer">Citizenship</button>
+                  <button type="button" onClick="{{ pickProgram1 }}" style="border:1px solid {{ prog1 }};background:none;border-radius:2px;padding:8px 12px;font-size:11px;color:#2C1D16;cursor:pointer">Residency</button>
+                  <button type="button" onClick="{{ pickProgram2 }}" style="border:1px solid {{ prog2 }};background:none;border-radius:2px;padding:8px 12px;font-size:11px;color:#2C1D16;cursor:pointer">Business Migration</button>
+                  <button type="button" onClick="{{ pickProgram3 }}" style="border:1px solid {{ prog3 }};background:none;border-radius:2px;padding:8px 12px;font-size:11px;color:#2C1D16;cursor:pointer">Real Estate</button>
+                </div>
+              </div>
+              <div>
+                <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:8px">Preferred language</span>
+                <div style="display:flex;gap:8px">
+                  <button type="button" onClick="{{ pickArabic }}" style="border:1px solid {{ langAr }};background:none;border-radius:2px;padding:8px 16px;font-size:11px;color:#2C1D16;cursor:pointer">Arabic</button>
+                  <button type="button" onClick="{{ pickFrench }}" style="border:1px solid {{ langFr }};background:none;border-radius:2px;padding:8px 16px;font-size:11px;color:#2C1D16;cursor:pointer">French</button>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top:18px;display:grid;grid-template-columns:2fr 1fr;gap:24px;align-items:end">
+              <label style="display:block">
+                <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:6px">Message</span>
+                <textarea rows="2" style="width:100%;box-sizing:border-box;background:transparent;border:1px solid rgba(44,29,22,.24);border-radius:2px;color:#2C1D16;font-size:13px;padding:8px 10px;outline:none;resize:vertical" style-focus="border-color:#C9A24D"></textarea>
+              </label>
+              <button type="button" onClick="{{ submitForm }}" style="background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;padding:13px 20px;border:0;border-radius:2px;cursor:pointer;height:fit-content">Book a Free Consultation</button>
+            </div>
+            <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+              <div style="margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:10px 12px">TODO — connect this form to MKK's inbox. Nothing was sent.</div>
+            </sc-if>
+            <p style="margin:14px 0 0;font-size:11px;line-height:1.6;color:rgba(44,29,22,.6)">MKK does not approve applications or guarantee outcomes. Your enquiry is handled by MKK as agent; all service agreements are made directly with Respect Services.</p>
+          </div>
+        </section>
+
+        <section data-reveal="1" data-chapter="7" style="position:relative;height:100vh;box-sizing:border-box;overflow-y:auto;display:flex;flex-direction:column;justify-content:center;padding:24px clamp(24px,6vw,110px) 24px clamp(58px,7vw,124px);margin:0 clamp(-24px,-6vw,-110px) 0 clamp(-58px,-7vw,-124px)">
+          <div style="position:absolute;inset:0;z-index:0;background-image:linear-gradient(180deg, rgba(44,29,22,.34), rgba(44,29,22,.3) 55%, rgba(44,29,22,.32))"></div>
+          <div style="position:relative;z-index:1;max-width:1000px;margin:0 auto;width:100%">
+          <div style="display:flex;align-items:center;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">
+            <span>07</span><span style="width:52px;height:1px;background:rgba(201,162,77,.6)"></span><span>Find Us</span>
+          </div>
+          <h2 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(28px,3.6vw,52px);line-height:1.1;letter-spacing:-0.02em;color:#F1E9D8;margin:22px 0 30px;max-width:760px;text-shadow:0 2px 30px rgba(8,18,13,.85)">Visit our office in Morocco.</h2>
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(24px,3vw,44px);align-items:stretch">
+            <div style="border-top:1px solid rgba(241,233,216,.18);padding-top:20px;display:flex;flex-direction:column;gap:22px;order:1">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(241,233,216,.6);margin-bottom:10px">Office</div>
+                <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+                  <span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — address (pin shows Casablanca as placeholder)</span>
+                </sc-if>
+              </div>
+              <a href="#" onClick="{{ goContact }}" style="width:fit-content;background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;padding:15px 24px;border-radius:2px">Get Directions</a>
+            </div>
+            <div data-map-el="1" style="width:100%;min-height:340px;border:1px solid rgba(201,162,77,.4);border-radius:2px;background:#1F140F;order:2"></div>
+          </div>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isPrograms }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <section data-reveal="1" style="height:100vh;box-sizing:border-box;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:stretch;padding:0;margin:0 clamp(-24px,-6vw,-110px) 0 clamp(-58px,-7vw,-124px)">
+          <div style="display:flex;flex-direction:column;justify-content:center;padding:104px clamp(24px,4vw,56px) 32px clamp(58px,7vw,124px)">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">The Possibilities</div>
+            <h1 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(30px,3.6vw,52px);line-height:1.05;letter-spacing:-0.025em;color:#F1E9D8;margin:14px 0 0;text-shadow:0 2px 30px rgba(8,18,13,.85)">Our Programs</h1>
+            <p style="font-size:clamp(12px,1vw,14px);line-height:1.55;font-weight:300;color:rgba(241,233,216,.82);margin:12px 0 0;max-width:520px">Access new horizons with trusted programs, delivered by Respect Services and supported locally by MKK, from consultation to completion.</p>
+            <div style="display:flex;flex-direction:column;gap:14px;margin-top:22px">
+              <a href="#" onClick="{{ goProg0 }}" style="display:flex;align-items:center;gap:18px;border:1px solid rgba(241,233,216,.16);border-radius:8px;background:rgba(31,20,15,.5);padding:14px 18px" style-hover="border-color:rgba(201,162,77,.5)">
+                <div style="flex:0 0 auto;width:64px;height:64px;border-radius:6px;overflow:hidden"><image-slot id="mkk-prog-1" shape="rect" fit="cover" src="./assets/prog-folder-compass.png" placeholder="Passport on a table"></image-slot></div>
+                <div style="flex:0 0 auto;width:26px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;color:#A9822F">01</div>
+                <div style="flex:1 1 auto;min-width:0">
+                  <h2 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(15px,1.3vw,18px);line-height:1.2;color:#F1E9D8;margin:0 0 4px">Citizenship by Investment</h2>
+                  <p style="font-size:11px;line-height:1.4;font-weight:300;color:rgba(241,233,216,.72);margin:0">A second passport. A wider world for you and your family.</p>
+                </div>
+                <div style="flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:6px">
+                  <span style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,162,77,.6);display:flex;align-items:center;justify-content:center;color:#C9A24D">→</span>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#C9A24D;white-space:nowrap">Learn More</span>
+                </div>
+              </a>
+              <a href="#" onClick="{{ goProg1 }}" style="display:flex;align-items:center;gap:18px;border:1px solid rgba(241,233,216,.16);border-radius:8px;background:rgba(31,20,15,.5);padding:14px 18px" style-hover="border-color:rgba(201,162,77,.5)">
+                <div style="flex:0 0 auto;width:64px;height:64px;border-radius:6px;overflow:hidden"><image-slot id="mkk-prog-2" shape="rect" fit="cover" src="./assets/prog-terrace-pool.png" placeholder="Riad courtyard"></image-slot></div>
+                <div style="flex:0 0 auto;width:26px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;color:#A9822F">02</div>
+                <div style="flex:1 1 auto;min-width:0">
+                  <h2 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(15px,1.3vw,18px);line-height:1.2;color:#F1E9D8;margin:0 0 4px">Residency by Investment</h2>
+                  <p style="font-size:11px;line-height:1.4;font-weight:300;color:rgba(241,233,216,.72);margin:0">Live, work and belong in a stable and secure environment.</p>
+                </div>
+                <div style="flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:6px">
+                  <span style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,162,77,.6);display:flex;align-items:center;justify-content:center;color:#C9A24D">→</span>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#C9A24D;white-space:nowrap">Learn More</span>
+                </div>
+              </a>
+              <a href="#" onClick="{{ goProg2 }}" style="display:flex;align-items:center;gap:18px;border:1px solid rgba(241,233,216,.16);border-radius:8px;background:rgba(31,20,15,.5);padding:14px 18px" style-hover="border-color:rgba(201,162,77,.5)">
+                <div style="flex:0 0 auto;width:64px;height:64px;border-radius:6px;overflow:hidden"><image-slot id="mkk-prog-3" shape="rect" fit="cover" src="./assets/prog-desk-globe.png" placeholder="Notebook and pen on desk"></image-slot></div>
+                <div style="flex:0 0 auto;width:26px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;color:#A9822F">03</div>
+                <div style="flex:1 1 auto;min-width:0">
+                  <h2 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(15px,1.3vw,18px);line-height:1.2;color:#F1E9D8;margin:0 0 4px">Business Migration Consultancy</h2>
+                  <p style="font-size:11px;line-height:1.4;font-weight:300;color:rgba(241,233,216,.72);margin:0">Set up, expand or relocate your business with confidence.</p>
+                </div>
+                <div style="flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:6px">
+                  <span style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,162,77,.6);display:flex;align-items:center;justify-content:center;color:#C9A24D">→</span>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#C9A24D;white-space:nowrap">Learn More</span>
+                </div>
+              </a>
+              <a href="#" onClick="{{ goProg3 }}" style="display:flex;align-items:center;gap:18px;border:1px solid rgba(241,233,216,.16);border-radius:8px;background:rgba(31,20,15,.5);padding:14px 18px" style-hover="border-color:rgba(201,162,77,.5)">
+                <div style="flex:0 0 auto;width:64px;height:64px;border-radius:6px;overflow:hidden"><image-slot id="mkk-prog-4" shape="rect" fit="cover" src="./assets/prog-living-arch.png" placeholder="Coastal property terrace"></image-slot></div>
+                <div style="flex:0 0 auto;width:26px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;color:#A9822F">04</div>
+                <div style="flex:1 1 auto;min-width:0">
+                  <h2 style="font-family:'Roboto Slab',serif;font-weight:400;font-size:clamp(15px,1.3vw,18px);line-height:1.2;color:#F1E9D8;margin:0 0 4px">International Real Estate &amp; Property Management</h2>
+                  <p style="font-size:11px;line-height:1.4;font-weight:300;color:rgba(241,233,216,.72);margin:0">Invest in exceptional properties. We manage, you enjoy the returns.</p>
+                </div>
+                <div style="flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:6px">
+                  <span style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(201,162,77,.6);display:flex;align-items:center;justify-content:center;color:#C9A24D">→</span>
+                  <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#C9A24D;white-space:nowrap">Learn More</span>
+                </div>
+              </a>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;margin-top:26px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(241,233,216,.55)">
+              <span style="width:24px;height:1px;background:rgba(201,162,77,.5)"></span><span>People</span><span style="opacity:.4">|</span><span>Opportunities</span><span style="opacity:.4">|</span><span>A Brighter Tomorrow</span>
+            </div>
+          </div>
+          <div style="position:relative;overflow:hidden"></div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isProg0 }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <section data-reveal="1" style="height:100vh;box-sizing:border-box;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:center;padding:170px 0 60px">
+          <div>
+            <a href="#" onClick="{{ goPrograms }}" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(241,233,216,.6)">← Our Programs</a>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;color:#A9822F;margin-top:22px">P/01</div>
+            <h1 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(34px,4.6vw,64px);line-height:1.06;letter-spacing:-0.02em;color:#F1E9D8;margin:16px 0 0;text-shadow:0 2px 32px rgba(8,18,13,.85)">Citizenship by Investment</h1>
+            <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start;margin-top:28px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — full description (countries, timelines, fees)</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — who this program suits</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — step-by-step process</span>
+              </div>
+            </sc-if>
+            <a href="#" onClick="{{ goContact }}" style="display:inline-block;margin-top:34px;background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:19px 32px;border-radius:2px">Book a Free Consultation</a>
+          </div>
+          <div style="width:100%;height:100%;max-height:calc(100vh - 230px);border:1px solid rgba(201,162,77,.45);border-radius:50% 50% 2px 2px / 24% 24% 2px 2px;padding:12px;box-sizing:border-box">
+            <div style="position:relative;width:100%;height:100%;border-radius:50% 50% 2px 2px / 24% 24% 2px 2px;overflow:hidden">
+              <image-slot id="mkk-progpage-0" shape="rect" fit="cover" src="./assets/prog-folder-compass.png" placeholder="Colonnade receding toward warm light"></image-slot>
+            </div>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isProg1 }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <section data-reveal="1" style="height:100vh;box-sizing:border-box;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:center;padding:170px 0 60px">
+          <div>
+            <a href="#" onClick="{{ goPrograms }}" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(241,233,216,.6)">← Our Programs</a>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;color:#A9822F;margin-top:22px">P/02</div>
+            <h1 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(34px,4.6vw,64px);line-height:1.06;letter-spacing:-0.02em;color:#F1E9D8;margin:16px 0 0;text-shadow:0 2px 32px rgba(8,18,13,.85)">Residency by Investment</h1>
+            <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start;margin-top:28px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — full description (countries, timelines, fees)</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — who this program suits</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — step-by-step process</span>
+              </div>
+            </sc-if>
+            <a href="#" onClick="{{ goContact }}" style="display:inline-block;margin-top:34px;background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:19px 32px;border-radius:2px">Book a Free Consultation</a>
+          </div>
+          <div style="width:100%;height:100%;max-height:calc(100vh - 230px);border:1px solid rgba(201,162,77,.45);border-radius:50% 50% 2px 2px / 24% 24% 2px 2px;padding:12px;box-sizing:border-box">
+            <div style="position:relative;width:100%;height:100%;border-radius:50% 50% 2px 2px / 24% 24% 2px 2px;overflow:hidden">
+              <image-slot id="mkk-progpage-1" shape="rect" fit="cover" src="./assets/prog-terrace-pool.png" placeholder="Riad courtyard, still water, brass lantern"></image-slot>
+            </div>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isProg2 }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <section data-reveal="1" style="height:100vh;box-sizing:border-box;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:center;padding:170px 0 60px">
+          <div>
+            <a href="#" onClick="{{ goPrograms }}" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(241,233,216,.6)">← Our Programs</a>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;color:#A9822F;margin-top:22px">P/03</div>
+            <h1 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(34px,4.6vw,64px);line-height:1.06;letter-spacing:-0.02em;color:#F1E9D8;margin:16px 0 0;text-shadow:0 2px 32px rgba(8,18,13,.85)">Business Migration Consultancy</h1>
+            <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start;margin-top:28px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — full description (countries, timelines, fees)</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — who this program suits</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — step-by-step process</span>
+              </div>
+            </sc-if>
+            <a href="#" onClick="{{ goContact }}" style="display:inline-block;margin-top:34px;background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:19px 32px;border-radius:2px">Book a Free Consultation</a>
+          </div>
+          <div style="width:100%;height:100%;max-height:calc(100vh - 230px);border:1px solid rgba(201,162,77,.45);border-radius:50% 50% 2px 2px / 24% 24% 2px 2px;padding:12px;box-sizing:border-box">
+            <div style="position:relative;width:100%;height:100%;border-radius:50% 50% 2px 2px / 24% 24% 2px 2px;overflow:hidden">
+              <image-slot id="mkk-progpage-2" shape="rect" fit="cover" src="./assets/prog-desk-globe.png" placeholder="Carved cedar screen, aged brass, low amber light"></image-slot>
+            </div>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isProg3 }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <section data-reveal="1" style="height:100vh;box-sizing:border-box;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:center;padding:170px 0 60px">
+          <div>
+            <a href="#" onClick="{{ goPrograms }}" style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(241,233,216,.6)">← Our Programs</a>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;color:#A9822F;margin-top:22px">P/04</div>
+            <h1 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(34px,4.6vw,64px);line-height:1.06;letter-spacing:-0.02em;color:#F1E9D8;margin:16px 0 0;text-shadow:0 2px 32px rgba(8,18,13,.85)">International Real Estate &amp; Property Management</h1>
+            <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start;margin-top:28px">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — full description (countries, timelines, fees)</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — who this program suits</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — step-by-step process</span>
+              </div>
+            </sc-if>
+            <a href="#" onClick="{{ goContact }}" style="display:inline-block;margin-top:34px;background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:19px 32px;border-radius:2px">Book a Free Consultation</a>
+          </div>
+          <div style="width:100%;height:100%;max-height:calc(100vh - 230px);border:1px solid rgba(201,162,77,.45);border-radius:50% 50% 2px 2px / 24% 24% 2px 2px;padding:12px;box-sizing:border-box">
+            <div style="position:relative;width:100%;height:100%;border-radius:50% 50% 2px 2px / 24% 24% 2px 2px;overflow:hidden">
+              <image-slot id="mkk-progpage-3" shape="rect" fit="cover" src="./assets/prog-living-arch.png" placeholder="Terrace colonnade over a city horizon at golden hour"></image-slot>
+            </div>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isTestimonials }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <section data-reveal="1" style="min-height:60vh;display:flex;flex-direction:column;justify-content:flex-end;padding:180px 0 40px;max-width:1000px">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">Success Stories</div>
+          <h1 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(36px,5.4vw,72px);line-height:1.05;letter-spacing:-0.025em;color:#F1E9D8;margin:24px 0 0;text-shadow:0 2px 34px rgba(8,18,13,.85)">Families who trusted MKK.</h1>
+          <p style="font-size:clamp(15px,1.2vw,17px);line-height:1.7;font-weight:300;color:rgba(241,233,216,.86);margin:24px 0 0;max-width:600px;text-shadow:0 1px 18px rgba(8,18,13,.9)">Thousands of success stories across our programs. A selection of client outcomes will appear here.</p>
+        </section>
+        <section data-reveal="1" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,3vw,40px);padding:20px 0 90px">
+          <div style="border-top:1px solid rgba(241,233,216,.2);padding-top:26px;display:flex;flex-direction:column;gap:16px">
+            <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;border:1px solid rgba(201,162,77,.45)"><image-slot id="mkk-testimonial-0" shape="rect" fit="cover" placeholder="Client portrait"></image-slot></div>
+            <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+              <span style="display:inline-block;width:fit-content;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — client quote, name, program</span>
+            </sc-if>
+          </div>
+          <div style="border-top:1px solid rgba(241,233,216,.2);padding-top:26px;display:flex;flex-direction:column;gap:16px">
+            <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;border:1px solid rgba(201,162,77,.45)"><image-slot id="mkk-testimonial-1" shape="rect" fit="cover" placeholder="Client portrait"></image-slot></div>
+            <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+              <span style="display:inline-block;width:fit-content;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — client quote, name, program</span>
+            </sc-if>
+          </div>
+          <div style="border-top:1px solid rgba(241,233,216,.2);padding-top:26px;display:flex;flex-direction:column;gap:16px">
+            <div style="width:64px;height:64px;border-radius:50%;overflow:hidden;border:1px solid rgba(201,162,77,.45)"><image-slot id="mkk-testimonial-2" shape="rect" fit="cover" placeholder="Client portrait"></image-slot></div>
+            <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+              <span style="display:inline-block;width:fit-content;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — client quote, name, program</span>
+            </sc-if>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isHow }}" hint-placeholder-val="{{ false }}">
+      <div style="height:100vh;box-sizing:border-box;overflow:hidden;padding:130px clamp(24px,5vw,90px) 40px;display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start;scroll-snap-stop:always">
+        <div style="max-width:640px;margin-bottom:clamp(28px,4vh,48px)">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">The Journey</div>
+          <h1 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(30px,4vw,54px);line-height:1.06;letter-spacing:-0.025em;color:#F1E9D8;margin:14px 0 0;text-shadow:0 2px 36px rgba(8,18,13,.85)">How It Works</h1>
+          <p style="font-size:clamp(13px,1vw,15px);line-height:1.55;font-weight:300;color:rgba(241,233,216,.88);margin:12px 0 0">One process, five stages. MKK prepares and accompanies; Respect Services contracts, submits and delivers.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0">
+          <div style="display:flex;align-items:baseline;gap:28px;padding:16px 20px;border-top:1px solid rgba(241,233,216,.16);background:rgba(31,20,15,.55);border-radius:4px">
+            <div style="flex:0 0 auto;width:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#C9A24D">01</div>
+            <div style="flex:0 0 auto;width:260px;font-family:'Roboto Slab',serif;font-weight:400;font-size:18px;color:#F1E9D8">Consultation with MKK</div>
+            <div style="flex:1 1 auto;font-size:13px;line-height:1.5;font-weight:300;color:rgba(241,233,216,.75)">We understand your goals, assess your profile and define the best strategy for your future.</div>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:28px;padding:16px 20px;border-top:1px solid rgba(241,233,216,.16);background:rgba(31,20,15,.55);border-radius:4px">
+            <div style="flex:0 0 auto;width:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#C9A24D">02</div>
+            <div style="flex:0 0 auto;width:260px;font-family:'Roboto Slab',serif;font-weight:400;font-size:18px;color:#F1E9D8">Application Preparation</div>
+            <div style="flex:1 1 auto;font-size:13px;line-height:1.5;font-weight:300;color:rgba(241,233,216,.75)">We guide you through every requirement and prepare a strong, complete application.</div>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:28px;padding:16px 20px;border-top:1px solid rgba(241,233,216,.16);background:rgba(31,20,15,.55);border-radius:4px">
+            <div style="flex:0 0 auto;width:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#C9A24D">03</div>
+            <div style="flex:0 0 auto;width:260px;font-family:'Roboto Slab',serif;font-weight:400;font-size:18px;color:#F1E9D8">Agreement with Respect Services</div>
+            <div style="flex:1 1 auto;font-size:13px;line-height:1.5;font-weight:300;color:rgba(241,233,216,.75)">You benefit from our trusted local expertise and international network.</div>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:28px;padding:16px 20px;border-top:1px solid rgba(241,233,216,.16);background:rgba(31,20,15,.55);border-radius:4px">
+            <div style="flex:0 0 auto;width:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#C9A24D">04</div>
+            <div style="flex:0 0 auto;width:260px;font-family:'Roboto Slab',serif;font-weight:400;font-size:18px;color:#F1E9D8">Submission &amp; Processing</div>
+            <div style="flex:1 1 auto;font-size:13px;line-height:1.5;font-weight:300;color:rgba(241,233,216,.75)">We manage the entire process with precision, keeping you informed at every step.</div>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:28px;padding:16px 20px;border-top:1px solid rgba(241,233,216,.16);border-bottom:1px solid rgba(241,233,216,.16);background:rgba(31,20,15,.55);border-radius:4px">
+            <div style="flex:0 0 auto;width:40px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#C9A24D">05</div>
+            <div style="flex:0 0 auto;width:260px;font-family:'Roboto Slab',serif;font-weight:400;font-size:18px;color:#F1E9D8">Approval &amp; Delivery</div>
+            <div style="flex:1 1 auto;font-size:13px;line-height:1.5;font-weight:300;color:rgba(241,233,216,.75)">You receive your approval and we continue to support you beyond, for a seamless transition.</div>
+          </div>
+        </div>
+        <div style="padding-top:clamp(24px,4vh,40px);display:flex;flex-wrap:wrap;gap:16px;align-items:center">
+          <a href="#" onClick="{{ goContact }}" style="background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:18px 28px;border-radius:2px">Book a Free Consultation</a>
+          <a href="#" onClick="{{ goContact }}" style="border:1px solid rgba(241,233,216,.45);color:#F1E9D8;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;padding:17px 28px;border-radius:2px">Message Us on WhatsApp</a>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
+      <div style="height:100vh;box-sizing:border-box;overflow-y:auto;padding:130px clamp(24px,4vw,56px) 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
+        <section data-reveal="arrive" style="scroll-snap-align:none;scroll-snap-stop:normal">
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:clamp(10px,1vw,12px);letter-spacing:.26em;text-transform:uppercase;color:#C9A24D">The Conversation</div>
+          <h1 style="font-family:'Roboto Slab',serif;font-weight:300;font-size:clamp(30px,4vw,52px);line-height:1.05;letter-spacing:-0.025em;color:#F1E9D8;margin:16px 0 0;text-shadow:0 2px 36px rgba(8,18,13,.85)">Contact</h1>
+          <p style="font-size:clamp(13px,1vw,15px);line-height:1.55;font-weight:300;color:rgba(241,233,216,.88);margin:14px 0 0;max-width:460px">WhatsApp is the fastest way to reach us. We answer in Arabic and French.</p>
+          <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+            <a href="#" onClick="{{ goContact }}" style="background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:19px 32px;border-radius:2px">Message Us on WhatsApp</a>
+            <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — WhatsApp number</span>
+            </sc-if>
+          </div>
+          <div style="margin-top:24px;border-top:1px solid rgba(241,233,216,.18);padding-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px 28px">
+            <div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(241,233,216,.6);margin-bottom:12px">Office</div>
+              <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+                <span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — address</span>
+              </sc-if>
+            </div>
+            <div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(241,233,216,.6);margin-bottom:12px">Email</div>
+              <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+                <span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — email</span>
+              </sc-if>
+            </div>
+            <div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(241,233,216,.6);margin-bottom:12px">Hours</div>
+              <sc-if value="{{ showTodo }}" hint-placeholder-val="{{ true }}">
+                <span style="display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:6px 10px">TODO — hours</span>
+              </sc-if>
+            </div>
+            <div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(241,233,216,.6);margin-bottom:12px">Languages</div>
+              <div style="font-size:15px;color:rgba(241,233,216,.9)">Arabic &nbsp;·&nbsp; French</div>
+            </div>
+          </div>
+          <div data-map-el="2" style="width: 561px; min-height: 180px; margin-top: 18px; border: 1px solid rgba(201,162,77,.4); border-radius: 2px; background: #1F140F; height: 320px"></div>
+        </section>
+        <section data-reveal="arrive" style="scroll-snap-align:none;scroll-snap-stop:normal;border:1px solid rgba(44,29,22,.15);border-radius:6px;padding:clamp(20px,2.4vw,36px);background:#F1E9D8;box-shadow:0 20px 60px rgba(8,18,13,.35)">
+          <div style="display:flex;align-items:center;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#C9A24D">
+            <svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,0 13.91,7.38 20.49,3.51 16.62,10.09 24,12 16.62,13.91 20.49,20.49 13.91,16.62 12,24 10.09,16.62 3.51,20.49 7.38,13.91 0,12 7.38,10.09 3.51,3.51 10.09,7.38" fill="#A9822F"></polygon></svg>
+            <span>Request a Consultation</span>
+          </div>
+          <div style="margin-top:22px;display:flex;flex-direction:column;gap:18px">
+            <label style="display:block">
+              <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:10px">Full name</span>
+              <input type="text" style="width:100%;box-sizing:border-box;background:transparent;border:0;border-bottom:1px solid rgba(44,29,22,.28);color:#2C1D16;font-size:16px;padding:8px 0;outline:none" style-focus="border-bottom-color:#C9A24D">
+            </label>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:26px">
+              <label style="display:block">
+                <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:10px">Email</span>
+                <input type="email" style="width:100%;box-sizing:border-box;background:transparent;border:0;border-bottom:1px solid rgba(44,29,22,.28);color:#2C1D16;font-size:16px;padding:8px 0;outline:none" style-focus="border-bottom-color:#C9A24D">
+              </label>
+              <label style="display:block">
+                <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:10px">WhatsApp number</span>
+                <input type="tel" style="width:100%;box-sizing:border-box;background:transparent;border:0;border-bottom:1px solid rgba(44,29,22,.28);color:#2C1D16;font-size:16px;padding:8px 0;outline:none" style-focus="border-bottom-color:#C9A24D">
+              </label>
+            </div>
+            <div>
+              <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:14px">Programme of interest</span>
+              <div style="display:flex;flex-wrap:wrap;gap:10px">
+                <button type="button" onClick="{{ pickProgram0 }}" style="border:1px solid {{ prog0 }};background:none;border-radius:2px;padding:11px 15px;font-size:13px;color:#2C1D16;cursor:pointer">Citizenship by Investment</button>
+                <button type="button" onClick="{{ pickProgram1 }}" style="border:1px solid {{ prog1 }};background:none;border-radius:2px;padding:11px 15px;font-size:13px;color:#2C1D16;cursor:pointer">Residency by Investment</button>
+                <button type="button" onClick="{{ pickProgram2 }}" style="border:1px solid {{ prog2 }};background:none;border-radius:2px;padding:11px 15px;font-size:13px;color:#2C1D16;cursor:pointer">Business Migration Consultancy</button>
+                <button type="button" onClick="{{ pickProgram3 }}" style="border:1px solid {{ prog3 }};background:none;border-radius:2px;padding:11px 15px;font-size:13px;color:#2C1D16;cursor:pointer">International Real Estate &amp; Property Management</button>
+              </div>
+            </div>
+            <div>
+              <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:14px">Preferred language</span>
+              <div style="display:flex;gap:10px">
+                <button type="button" onClick="{{ pickArabic }}" style="border:1px solid {{ langAr }};background:none;border-radius:2px;padding:11px 20px;font-size:13px;color:#2C1D16;cursor:pointer">Arabic</button>
+                <button type="button" onClick="{{ pickFrench }}" style="border:1px solid {{ langFr }};background:none;border-radius:2px;padding:11px 20px;font-size:13px;color:#2C1D16;cursor:pointer">French</button>
+              </div>
+            </div>
+            <label style="display:block">
+              <span style="display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(44,29,22,.6);margin-bottom:10px">Message</span>
+              <textarea rows="4" style="width:100%;box-sizing:border-box;background:transparent;border:1px solid rgba(44,29,22,.24);border-radius:2px;color:#2C1D16;font-size:15px;padding:12px;outline:none;resize:vertical" style-focus="border-color:#C9A24D"></textarea>
+            </label>
+            <button type="button" onClick="{{ submitForm }}" style="background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;padding:19px 32px;border:0;border-radius:2px;cursor:pointer">Book a Free Consultation</button>
+            <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#C9A24D;border:1px dashed rgba(201,162,77,.65);border-radius:2px;padding:12px 14px">TODO — connect this form to MKK's inbox. Nothing was sent.</div>
+            </sc-if>
+            <p style="margin:0;font-size:12px;line-height:1.65;color:rgba(44,29,22,.52)">MKK does not approve applications or guarantee outcomes. Your enquiry is handled by MKK as agent; all service agreements are made directly with Respect Services.</p>
+          </div>
+        </section>
+      </div>
+    </sc-if>
+
+    <section style="scroll-snap-align:{{ footerSnap }};scroll-snap-stop:normal;display:block">
+      <footer style="margin-top:60px;padding:48px 0 56px;border-top:1px solid rgba(241,233,216,.2)">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:flex-start">
+        <img src="./assets/mkk-logo.png" alt="MKK" style="height:56px;width:auto;display:block">
+        <div style="display:flex;flex-wrap:wrap;gap:18px 34px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase">
+          <a href="#" onClick="{{ goAbout }}" style="color:rgba(241,233,216,.7)">About Us</a>
+          <a href="#" onClick="{{ goPrograms }}" style="color:rgba(241,233,216,.7)">Our Programs</a>
+          <a href="#" onClick="{{ goWhy }}" style="color:rgba(241,233,216,.7)">Why MKK</a>
+          <a href="#" onClick="{{ goHow }}" style="color:rgba(241,233,216,.7)">How It Works</a>
+          <a href="#" onClick="{{ goFaq }}" style="color:rgba(241,233,216,.7)">FAQ</a>
+          <a href="#" onClick="{{ goContact }}" style="color:rgba(241,233,216,.7)">Contact</a>
+        </div>
+      </div>
+      <p style="margin:34px 0 0;max-width:900px;font-size:13px;line-height:1.7;color:rgba(241,233,216,.78);border-top:1px solid rgba(241,233,216,.16);padding-top:24px">MKK is the exclusive authorized agent of Respect Services in Morocco. All programs, applications, and service agreements are provided directly by Respect Services.</p>
+    </footer>
+    </section>
+  </main>
+
+  <a href="#" onClick="{{ goContact }}" style="position:fixed;right:clamp(16px,2.5vw,34px);bottom:clamp(16px,2.5vw,34px);z-index:7;display:flex;align-items:center;gap:12px;background:#C9A24D;color:#2C1D16;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;padding:16px 22px;border-radius:2px;box-shadow:0 10px 34px rgba(8,18,13,.55)">
+    <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.2 1.2-1.9 1.2-.6 0-1.9-.2-3.9-1.4-2.3-1.4-3.7-3.9-3.8-4.1-.1-.2-.8-1.2-.8-2.2s.6-1.6.8-1.8c.2-.2.4-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.6l-.4.5c-.1.2-.3.3-.1.6.2.3.7 1.1 1.4 1.7.9.8 1.6 1.1 1.9 1.2.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.7.8c.5.2.5.4.5.6 0 .1 0 .6-.1 1z" fill="#2C1D16"></path></svg>
+    <span>WhatsApp</span>
+  </a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;veilStrength&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Light&quot;,&quot;Medium&quot;,&quot;Heavy&quot;],&quot;default&quot;:&quot;Medium&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Imagery&quot;},&quot;showTodoMarkers&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      page: 'home', menuOpen: false, narrow: false,
+      program: -1, lang: 'ar', sent: false
+    };
+    this._p = 0; this._target = 0; this._raf = null; this._lastPage = 'home';
+  }
+
+  componentDidMount() {
+    this._reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this._onResize = () => {
+      const n = window.innerWidth < 1000;
+      if (n !== this.state.narrow) this.setState({ narrow: n, menuOpen: false });
+      this._measure();
+    };
+    this._onScroll = () => { this._measure(); };
+    window.addEventListener('resize', this._onResize, { passive: true });
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onResize();
+    this._tag();
+    this._tick = this._tick.bind(this);
+    this._raf = requestAnimationFrame(this._tick);
+    this._initMap();
+  }
+
+  _initMap(tries) {
+    tries = tries || 0;
+    const root = this._root();
+    const els = root ? root.querySelectorAll('[data-map-el]') : [];
+    const pending = Array.from(els).filter((el) => !el._leaflet_id);
+    if (!pending.length) { if (tries < 40) setTimeout(() => this._initMap(tries + 1), 150); return; }
+    if (!window.L) { if (tries < 40) setTimeout(() => this._initMap(tries + 1), 150); return; }
+    pending.forEach((el) => {
+      const map = window.L.map(el, { scrollWheelZoom: false }).setView([33.5731, -7.5898], 13);
+      window.L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap contributors' }).addTo(map);
+      window.L.marker([33.5731, -7.5898]).addTo(map);
+    });
+  }
+
+  componentDidUpdate() {
+    if (this._lastPage !== this.state.page) {
+      this._lastPage = this.state.page;
+      this._tag();
+      this._measure();
+      this._apply();
+      this._initMap();
+    }
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._onResize);
+    window.removeEventListener('scroll', this._onScroll);
+    if (this._raf) cancelAnimationFrame(this._raf);
+  }
+
+  _root() { return document.querySelector('[data-mkk-site]'); }
+
+  // Mark each animatable line inside a reveal block, one level deeper when the
+  // child is itself a container (a grid of cards, a rail of steps).
+  _tag() {
+    const root = this._root();
+    if (!root) return;
+    root.querySelectorAll('[data-line]').forEach((el) => el.removeAttribute('data-line'));
+    root.querySelectorAll('[data-reveal]').forEach((host) => {
+      const lines = [];
+      Array.prototype.forEach.call(host.children, (child) => {
+        if (child.children.length >= 3 && child.tagName !== 'H1' && child.tagName !== 'H2' && child.tagName !== 'P') {
+          Array.prototype.forEach.call(child.children, (g) => lines.push(g));
+        } else {
+          lines.push(child);
+        }
+      });
+      lines.forEach((el, i) => {
+        el.setAttribute('data-line', String(i));
+        el.style.willChange = 'opacity, transform, filter';
+      });
+    });
+  }
+
+  _measure() {
+    const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    this._target = Math.min(1, Math.max(0, window.scrollY / max));
+  }
+
+  // Scroll-linked only. lerp 0.09 gives the page its glide; nothing runs on a timer.
+  _tick() {
+    this._p += (this._target - this._p) * 0.09;
+    if (Math.abs(this._target - this._p) < 0.0002) this._p = this._target;
+    this._apply();
+    this._raf = requestAnimationFrame(this._tick);
+  }
+
+  _apply() {
+    const root = this._root();
+    if (!root) return;
+    const vh = window.innerHeight, p = this._reduce ? 0 : this._p;
+
+    const photo = root.querySelector('[data-stage-photo="0"]');
+    if (photo) photo.style.transform = 'scale(' + (1 + 0.22 * p) + ') translate3d(0,' + (-70 * p) + 'px,0)';
+    const p1 = root.querySelector('[data-stage-photo="1"]');
+    const p2 = root.querySelector('[data-stage-photo="2"]');
+    const p3 = root.querySelector('[data-stage-photo="3"]');
+    const p4 = root.querySelector('[data-stage-photo="4"]');
+    const p5 = root.querySelector('[data-stage-photo="5"]');
+    let homeChapter = 0;
+    if (this.state.page === 'home') {
+      root.querySelectorAll('[data-chapter]').forEach((el) => {
+        const r = el.getBoundingClientRect();
+        if (r.top < vh * 0.55) homeChapter = parseInt(el.getAttribute('data-chapter'), 10);
+      });
+    }
+    const p6 = root.querySelector('[data-stage-photo="6"]');
+    const p7 = root.querySelector('[data-stage-photo="7"]');
+    const p8 = root.querySelector('[data-stage-photo="8"]');
+    if (p1 && p2) {
+      const chapter = this.state.page === 'home' ? (homeChapter === 0 ? 0 : homeChapter === 2 ? 1 : homeChapter === 3 ? 3 : homeChapter === 4 ? 2 : (homeChapter === 5 || homeChapter === 6) ? 4 : homeChapter === 7 ? 5 : -1) : (this.state.page === 'how' ? 8 : this.state.page === 'contact' ? 7 : (this.state.page === 'programs' || this.state.page === 'prog0' || this.state.page === 'prog1' || this.state.page === 'prog2' || this.state.page === 'prog3') ? 6 : 0);
+      photo.style.opacity = chapter === 0 ? '1' : '0';
+      p1.style.opacity = chapter === 1 ? '1' : '0';
+      p2.style.opacity = chapter === 2 ? '1' : '0';
+      if (p3) p3.style.opacity = chapter === 3 ? '1' : '0';
+      if (p4) p4.style.opacity = chapter === 4 ? '1' : '0';
+      if (p5) p5.style.opacity = chapter === 5 ? '1' : '0';
+      if (p6) p6.style.opacity = chapter === 6 ? '1' : '0';
+      if (p7) p7.style.opacity = chapter === 7 ? '1' : '0';
+      if (p8) p8.style.opacity = chapter === 8 ? '1' : '0';
+      p1.style.transform = photo.style.transform;
+      p2.style.transform = photo.style.transform;
+      if (p3) p3.style.transform = photo.style.transform;
+      if (p4) p4.style.transform = photo.style.transform;
+      if (p5) p5.style.transform = photo.style.transform;
+      if (p6) p6.style.transform = photo.style.transform;
+      if (p7) p7.style.transform = photo.style.transform;
+      if (p8) p8.style.transform = photo.style.transform;
+    }
+    // Divergent depth: the bloom recedes and shrinks while the near layers grow.
+    const bloom = root.querySelector('[data-stage-bloom]');
+    if (bloom) bloom.style.transform = 'translate3d(0,' + (26 * p) + 'px,0) scale(' + (1.08 - 0.26 * p) + ')';
+    // Hero: globe and arch sit right of the copy, then glide back to centre as
+    // the page scrolls. Same easing family as the arrivals.
+    const hx = Math.min(1, p / 0.18);
+    const shift = (1 - (1 - Math.pow(1 - hx, 2))) * Math.min(window.innerWidth * 0.27, 380);
+    const globe = root.querySelector('[data-stage-globe]');
+    if (globe) {
+      globe.style.transform = 'translate3d(' + shift.toFixed(1) + 'px,' + (-150 * p) + 'px,0) scale(' + (0.72 + 0.78 * p) + ')';
+      globe.style.opacity = (0.92 - 0.34 * p).toFixed(3);
+    }
+    const gimg = root.querySelector('[data-globe-img]');
+    if (gimg) gimg.style.transform = 'rotate(' + (-7 * p) + 'deg)';
+    const lat = root.querySelector('[data-globe-lat]');
+    if (lat) lat.setAttribute('transform', 'rotate(' + (-12 * p) + ' 100 100)');
+    const lon = root.querySelector('[data-globe-lon]');
+    if (lon) lon.setAttribute('transform', 'translate(100 100) scale(' + Math.max(0.06, Math.abs(Math.cos(p * Math.PI * 0.9))) + ' 1) translate(-100 -100) rotate(' + (-12 * p) + ' 100 100)');
+    root.querySelectorAll('[data-arc]').forEach((a, i) => {
+      a.style.strokeDashoffset = String(-p * (180 + i * 60));
+      a.style.opacity = String(0.45 + 0.55 * Math.min(1, p * 2.2));
+    });
+    root.querySelectorAll('[data-globe-node]').forEach((n, i) => {
+      n.style.opacity = String(Math.min(1, Math.max(0, p * 2.4 - i * 0.12)));
+    });
+    const arch = root.querySelector('[data-stage-arch]');
+    if (arch) {
+      arch.style.transform = 'translateX(-50%) translate3d(' + Math.min(shift, 110).toFixed(1) + 'px,' + (-150 * p) + 'px,0) scale(' + (1 + 1.05 * p) + ')';
+      arch.style.opacity = (1 - 0.55 * p).toFixed(3);
+    }
+
+    const spines = root.querySelectorAll('[data-spine]');
+    let current = 0;
+    root.querySelectorAll('[data-chapter]').forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < vh * 0.55) current = parseInt(el.getAttribute('data-chapter'), 10);
+    });
+    spines.forEach((d, i) => {
+      const on = i === current && this.state.page === 'home';
+      d.style.width = on ? '13px' : '7px';
+      d.style.height = on ? '13px' : '7px';
+      d.style.background = on ? '#C9A24D' : 'rgba(201,162,77,.4)';
+      d.style.boxShadow = on ? '0 0 18px 4px rgba(201,162,77,.45)' : 'none';
+    });
+
+    root.querySelectorAll('[data-rail-wrap]').forEach((wrap) => {
+      const rail = wrap.querySelector('[data-rail]');
+      if (!rail) return;
+      const r = wrap.getBoundingClientRect();
+      const t = Math.min(1, Math.max(0, (vh * 0.62 - r.top) / Math.max(1, r.height * 0.82)));
+      rail.style.height = (this._reduce ? 100 : t * 100) + '%';
+    });
+
+    root.querySelectorAll('[data-step]').forEach((el) => {
+      const r = el.getBoundingClientRect();
+      const mid = r.top + r.height / 2;
+      const active = mid > vh * 0.22 && mid < vh * 0.62;
+      const passed = mid <= vh * 0.22;
+      const dot = el.querySelector('[data-dot]');
+      const state = el.querySelector('[data-state]');
+      const h2 = el.querySelector('h2');
+      if (dot) {
+        dot.style.width = active ? '23px' : '11px';
+        dot.style.height = active ? '23px' : '11px';
+        dot.style.left = active ? '-6px' : '0';
+        dot.style.background = active ? '#C9A24D' : passed ? 'rgba(169,130,47,.9)' : 'transparent';
+        dot.style.border = active ? '0' : passed ? '0' : '1px solid rgba(241,233,216,.4)';
+        dot.style.boxShadow = active ? '0 0 0 7px rgba(201,162,77,.18), 0 0 34px 10px rgba(201,162,77,.45)' : 'none';
+        dot.style.transition = 'all .45s cubic-bezier(.22,.61,.36,1)';
+      }
+      if (state) {
+        state.textContent = active ? 'In progress' : passed ? 'Completed' : 'Upcoming';
+        state.style.color = active ? '#C9A24D' : passed ? 'rgba(241,233,216,.5)' : 'rgba(241,233,216,.34)';
+      }
+      if (h2) h2.style.color = active ? '#F1E9D8' : passed ? 'rgba(241,233,216,.62)' : 'rgba(241,233,216,.46)';
+    });
+
+    // Every line runs the same arrive / hold / depart move, staggered down the
+    // block so the type reads as a camera settling rather than a single slab.
+    root.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+    const vw = window.innerWidth;
+    const gr = globe ? globe.getBoundingClientRect() : null;
+    const gc = gr ? { x: gr.left + gr.width / 2, y: gr.top + gr.height / 2 } : { x: vw * 0.5, y: vh * 0.54 };
+    root.querySelectorAll('[data-line]').forEach((el) => {
+      if (this._reduce) { el.style.opacity = '1'; el.style.transform = 'none'; el.style.filter = 'none'; return; }
+      const host = el.closest('[data-reveal]');
+      if (!host) return;
+      const r = host.getBoundingClientRect();
+      const span = vh * 0.30;
+      const i = parseInt(el.getAttribute('data-line'), 10) || 0;
+      const a = Math.min(1, Math.max(0, (vh * 0.90 - r.top - i * 46) / span));
+      const ea = 1 - Math.pow(1 - a, 2);
+
+      // Each line is born at the globe's centre and travels outward to its
+      // resting place; on exit it keeps going along the same ray, off-frame.
+      const er = el.getBoundingClientRect();
+      const cx = er.left + er.width / 2, cy = er.top + er.height / 2;
+      let vx = cx - gc.x, vy = cy - gc.y;
+      const len = Math.hypot(vx, vy) || 1;
+      vx /= len; vy /= len;
+
+      let o = ea;
+      let tx = (gc.x - cx) * (1 - ea) * 0.9;
+      let ty = (gc.y - cy) * (1 - ea) * 0.9;
+      let s = 0.46 + 0.54 * ea;
+      let b = 9 * (1 - ea);
+
+      if (host.getAttribute('data-reveal') !== 'arrive') {
+        const d = Math.min(1, Math.max(0, (vh * 0.32 - r.bottom + i * 30) / span));
+        const ed = d * d;
+        const reach = Math.max(vw, vh) * 0.62 * ed;
+        o = ea * (1 - ed);
+        tx += vx * reach;
+        ty += vy * reach - 40 * ed;
+        s += 0.5 * ed;
+        b += 12 * ed;
+      }
+      el.style.opacity = o.toFixed(3);
+      el.style.transform = 'translate3d(' + tx.toFixed(1) + 'px,' + ty.toFixed(1) + 'px,0) scale(' + s.toFixed(4) + ')';
+      el.style.filter = b > 0.15 ? 'blur(' + b.toFixed(2) + 'px)' : 'none';
+      el.style.transformOrigin = '50% 50%';
+    });
+  }
+
+  _go(page, hash) {
+    this.setState({ page, menuOpen: false }, () => {
+      if (hash) {
+        const el = document.getElementById(hash);
+        if (el) { window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior: 'smooth' }); return; }
+      }
+      window.scrollTo({ top: 0, behavior: 'auto' });
+      this._measure();
+    });
+  }
+
+  renderVals() {
+    const veils = {
+      Light: 'linear-gradient(180deg, rgba(44,29,22,.52) 0%, rgba(44,29,22,.32) 38%, rgba(44,29,22,.46) 100%)',
+      Medium: 'linear-gradient(180deg, rgba(44,29,22,.70) 0%, rgba(44,29,22,.46) 38%, rgba(44,29,22,.46) 100%)',
+      Heavy: 'linear-gradient(180deg, rgba(44,29,22,.64) 0%, rgba(44,29,22,.64) 38%, rgba(44,29,22,.95) 100%)'
+    };
+    const page = this.state.page;
+    const on = '#F1E9D8', off = 'rgba(241,233,216,.72)';
+    const gold = '#A9822F', hair = 'rgba(241,233,216,.3)';
+    const stop = (e) => { if (e && e.preventDefault) e.preventDefault(); };
+    return {
+      veil: veils[this.props.veilStrength ?? 'Medium'] || veils.Medium,
+      bedOpacity: 0.55,
+      showTodo: this.props.showTodoMarkers ?? true,
+      isHome: page === 'home', isPrograms: page === 'programs', isHow: page === 'how', isContact: page === 'contact',
+      isProg0: page === 'prog0', isProg1: page === 'prog1', isProg2: page === 'prog2', isProg3: page === 'prog3',
+      isTestimonials: page === 'testimonials',
+      // The footer is a permanent, always-rendered section, so its own snap-align
+      // was forcing html's mandatory y-snap to lock onto it on every panel-style
+      // page (Programs/How/Contact/Prog0-3), which scroll internally inside their
+      // own 100vh box and were never meant to engage document-level snap at all.
+      // Only Home and Testimonials use real stacked, document-scrolled chapters.
+      footerSnap: (page === 'home' || page === 'testimonials') ? 'start' : 'none',
+      navHome: page === 'home' ? on : off, navHomeRule: page === 'home' ? gold : 'transparent',
+      navPrograms: (page === 'programs' || page.indexOf('prog') === 0) ? on : off, navProgramsRule: (page === 'programs' || page.indexOf('prog') === 0) ? gold : 'transparent',
+      navHow: page === 'how' ? on : off, navHowRule: page === 'how' ? gold : 'transparent',
+      navTestimonials: page === 'testimonials' ? on : off, navTestimonialsRule: page === 'testimonials' ? gold : 'transparent',
+      navContact: page === 'contact' ? on : off, navContactRule: page === 'contact' ? gold : 'transparent',
+      narrow: this.state.narrow, wide: !this.state.narrow, menuOpen: this.state.menuOpen && this.state.narrow,
+      sent: this.state.sent,
+      prog0: this.state.program === 0 ? gold : hair,
+      prog1: this.state.program === 1 ? gold : hair,
+      prog2: this.state.program === 2 ? gold : hair,
+      prog3: this.state.program === 3 ? gold : hair,
+      langAr: this.state.lang === 'ar' ? gold : hair,
+      langFr: this.state.lang === 'fr' ? gold : hair,
+      toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
+      goHome: (e) => { stop(e); this._go('home'); },
+      goPrograms: (e) => { stop(e); this._go('programs'); },
+      goHow: (e) => { stop(e); this._go('how'); },
+      goContact: (e) => { stop(e); this._go('contact'); },
+      goAbout: (e) => { stop(e); this._go('home', 'why-mkk'); },
+      goWhy: (e) => { stop(e); this._go('home', 'why-mkk'); },
+      goFaq: (e) => { stop(e); this._go('home', 'faq'); },
+      goTestimonials: (e) => { stop(e); this._go('testimonials'); },
+      goProg0: (e) => { stop(e); this._go('prog0'); },
+      goProg1: (e) => { stop(e); this._go('prog1'); },
+      goProg2: (e) => { stop(e); this._go('prog2'); },
+      goProg3: (e) => { stop(e); this._go('prog3'); },
+      pickProgram0: () => this.setState({ program: 0 }),
+      pickProgram1: () => this.setState({ program: 1 }),
+      pickProgram2: () => this.setState({ program: 2 }),
+      pickProgram3: () => this.setState({ program: 3 }),
+      pickArabic: () => this.setState({ lang: 'ar' }),
+      pickFrench: () => this.setState({ lang: 'fr' }),
+      submitForm: () => this.setState({ sent: true })
+    };
+  }
+}
+</script>
+</body>
+</html>

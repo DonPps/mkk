@@ -1,0 +1,11 @@
+# Internal planning/tooling — not part of the served site
+NEW DESIGN MKK/
+AGENTS.md
+.agents/
+.claude/
+CLAUDE.md
+.image-slots.state.json
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

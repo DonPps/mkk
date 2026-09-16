@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  This site is currently a single-page app: every section (About, Programs,
+  Why MKK, How It Works, FAQ, Contact, Testimonials, and the four program
+  detail views) lives inside index.html as a client-side view, not as its
+  own crawlable URL. Listing the old about.html/programs.html/etc. URLs here
+  would be actively wrong -- they no longer exist and would 404 for anyone
+  who followed them from search results. Only the one real URL is listed.
+
+  If/when this becomes a real multi-page or multi-language site (see the
+  hreflang note in index.html's <head>), each new URL belongs here too.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.example.com/</loc></url>
+</urlset>
